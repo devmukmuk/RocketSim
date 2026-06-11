@@ -1,0 +1,91 @@
+name: AeroTech H123W
+impulse_class: H
+
+average_thrust: 123.0
+burn_time: 2.45
+delay: 8.0
+
+propellant_weight: 0.129
+loaded_weight: 0.240
+
+thrust_curve:
+  - time: 0.00
+    thrust: 0.0
+
+  - time: 0.05
+    thrust: 97.0
+
+  - time: 0.15
+    thrust: 147.0
+
+  - time: 0.22
+    thrust: 150.0
+
+  - time: 0.32
+    thrust: 152.0
+
+  - time: 0.42
+    thrust: 151.0
+
+  - time: 0.52
+    thrust: 150.0
+
+  - time: 0.62
+    thrust: 150.0
+
+  - time: 0.72
+    thrust: 149.0
+
+  - time: 0.85
+    thrust: 145.0
+
+  - time: 0.95
+    thrust: 144.0
+
+  - time: 1.05
+    thrust: 142.0
+
+  - time: 1.15
+    thrust: 136.0
+
+  - time: 1.25
+    thrust: 126.0
+
+  - time: 1.35
+    thrust: 114.0
+
+  - time: 1.45
+    thrust: 102.0
+
+  - time: 1.55
+    thrust: 90.0
+
+  - time: 1.65
+    thrust: 79.0
+
+  - time: 1.75
+    thrust: 67.0
+
+  - time: 1.85
+    thrust: 55.0
+
+  - time: 1.95
+    thrust: 48.0
+
+  - time: 2.05
+    thrust: 39.0
+
+  - time: 2.12
+    thrust: 24.0
+
+  - time: 2.20
+    thrust: 15.0
+
+  - time: 2.30
+    thrust: 8.0
+
+  - time: 2.40
+    thrust: 5.0
+
+  - time: 2.48
+    thrust: 0.0

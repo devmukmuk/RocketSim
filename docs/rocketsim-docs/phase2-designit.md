@@ -17,6 +17,19 @@ Estimated Phases: 2
 - Add `SimulationService` to run time-step simulation from rocket + motor inputs
 - Detect core events: liftoff, burnout, max velocity, apogee, deployment placeholder, landing placeholder
 
+# --------------------------------------------------
+# Phase 2c - CLI Simulation Command
+# --------------------------------------------------
+- Add `rocketsim simulate` command using existing rocket YAML and motor YAML inputs
+- Load `Rocket` and `Motor` configs from the CLI and run `SimulationService`
+
+# --------------------------------------------------
+# Phase 2d - Simulation Summary Output
+# --------------------------------------------------
+- Print readable simulation summary: rocket, motor, max altitude, max velocity, simulation time
+- Print detected flight events: liftoff, burnout, max velocity, apogee, deployment, landing
+
+
 # ==================================================
 # Architecture Notes
 # ==================================================

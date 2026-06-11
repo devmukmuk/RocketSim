@@ -14,6 +14,7 @@ def test_motor_from_dict_creates_valid_motor() -> None:
             "burn_time": 1.7,
             "delay": 10.0,
             "propellant_weight": 0.18,
+            "loaded_weight": 0.25,
             "thrust_curve": [
                 {"time": 0.0, "thrust": 0.0},
                 {"time": 0.1, "thrust": 160.0},
@@ -48,6 +49,7 @@ def test_motor_rejects_non_positive_numeric_values() -> None:
                 "burn_time": 1.7,
                 "delay": 10.0,
                 "propellant_weight": 0.18,
+                "loaded_weight": 0.25,
                 "thrust_curve": [{"time": 0.0, "thrust": 0.0}],
             }
         )
@@ -63,6 +65,7 @@ def test_motor_rejects_negative_delay() -> None:
                 "burn_time": 1.7,
                 "delay": -1.0,
                 "propellant_weight": 0.18,
+                "loaded_weight": 0.25,
                 "thrust_curve": [{"time": 0.0, "thrust": 0.0}],
             }
         )
@@ -79,6 +82,7 @@ average_thrust: 123.0
 burn_time: 1.7
 delay: 10.0
 propellant_weight: 0.18
+loaded_weight: 0.25
 thrust_curve:
   - time: 0.0
     thrust: 0.0

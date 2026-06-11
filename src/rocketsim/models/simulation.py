@@ -24,6 +24,8 @@ class FlightEvent:
     time_seconds: float
     altitude_meters: float
     velocity_mps: float
+    acceleration_mps2: float
+    mass_kg: float
 
 
 @dataclass

@@ -16,6 +16,7 @@ class Motor:
     delay: float
     propellant_weight: float
     thrust_curve: list[tuple[float, float]]
+    loaded_weight: float
 
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> "Motor":
@@ -27,6 +28,7 @@ class Motor:
             "delay",
             "propellant_weight",
             "thrust_curve",
+            "loaded_weight",
         ]
 
         missing_fields = [field for field in required_fields if field not in data]
@@ -47,6 +49,7 @@ class Motor:
                 (float(point["time"]), float(point["thrust"]))
                 for point in data["thrust_curve"]
             ],
+            loaded_weight=float(data["loaded_weight"]),
         )
 
         motor.validate()
