@@ -19,6 +19,7 @@ def test_rocket_from_dict_creates_valid_rocket() -> None:
             "fin_tip_chord": 3.0,
             "fin_span": 4.0,
             "fin_sweep": 2.0,
+            "drag_coefficient": 0.75,
         }
     )
 
@@ -52,6 +53,7 @@ def test_rocket_rejects_non_positive_numeric_values() -> None:
                 "fin_tip_chord": 3.0,
                 "fin_span": 4.0,
                 "fin_sweep": 2.0,
+                "drag_coefficient": 0.75,
             }
         )
 
@@ -72,6 +74,7 @@ fin_root_chord: 6.0
 fin_tip_chord: 3.0
 fin_span: 4.0
 fin_sweep: 2.0
+drag_coefficient: 0.75
 """.strip(),
         encoding="utf-8",
     )
