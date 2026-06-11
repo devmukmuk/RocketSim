@@ -1,11 +1,12 @@
 name: Example Rocket
-diameter: 4.0
-length: 45.0
-dry_weight: 48.0
-center_of_gravity: 26.0
-center_of_pressure: 32.0
-fin_count: 4
-fin_root_chord: 6.0
-fin_tip_chord: 3.0
-fin_span: 4.0
-fin_sweep: 2.0
+diameter: 0.1016
+length: 1.22
+dry_weight: 1.36
+center_of_gravity: 0.55
+center_of_pressure: 0.75
+fin_count: 3
+fin_root_chord: 0.15
+fin_tip_chord: 0.08
+fin_span: 0.10
+fin_sweep: 0.05
+drag_coefficient: 0.75

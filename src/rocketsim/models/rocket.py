@@ -20,6 +20,7 @@ class Rocket:
     fin_tip_chord: float
     fin_span: float
     fin_sweep: float
+    drag_coefficient: float = 0.75
 
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> "Rocket":
@@ -35,6 +36,7 @@ class Rocket:
             "fin_tip_chord",
             "fin_span",
             "fin_sweep",
+            "drag_coefficient",
         ]
 
         missing_fields = [field for field in required_fields if field not in data]
@@ -57,6 +59,7 @@ class Rocket:
             fin_tip_chord=float(data["fin_tip_chord"]),
             fin_span=float(data["fin_span"]),
             fin_sweep=float(data["fin_sweep"]),
+            drag_coefficient=float(data["drag_coefficient"])
         )
 
         rocket.validate()
@@ -87,6 +90,7 @@ class Rocket:
             "fin_root_chord": self.fin_root_chord,
             "fin_tip_chord": self.fin_tip_chord,
             "fin_span": self.fin_span,
+            "drag_coefficient": self.drag_coefficient,
         }
 
         for field_name, value in positive_fields.items():
