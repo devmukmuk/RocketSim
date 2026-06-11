@@ -71,6 +71,42 @@
    refactor(photoit): simplify rename provider logic
    </pre>
 
+1. **Branch Naming Conventions**
+   <pre lang="markdown">
+   Branch names should NOT contain GitHub issue numbers.
+
+   Preferred:
+
+   rocket-model-phase-1a
+   motor-model-phase-1b
+   simulation-phase-2a
+
+   Or shorter:
+
+   p1a-rocket-model
+   p1b-motor-model
+   p2a-flight-simulation
+
+   Avoid:
+
+   5-rocket-model-phase-1a
+   17-motor-model-phase-1b
+
+   Reason:
+
+   - GitHub issue numbers are not known during planning
+   - Branch names should remain stable
+   - Branches should describe implementation scope
+   - Phase identifiers already provide traceability
+
+   The assistant should infer branch names from:
+   - feature name
+   - phase number
+   - story identifier
+
+   and should not require the user to provide issue numbers.
+   </pre>
+
 1. **Canonical Workflow Template**
    <pre lang="bash">
    BRANCH=""
@@ -138,4 +174,5 @@
    </pre>
 
 <br>Author: Mike Mattinson/Chat  
-<br>Updated: May/20/2026
+<br>Created: May/20/2026
+<br>Updated: Jun/11/2026
