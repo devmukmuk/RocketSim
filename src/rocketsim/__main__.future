@@ -1,0 +1,38 @@
+"""RocketSim application entry point."""
+
+from __future__ import annotations
+
+import sys
+
+from rocketsim import __app_name__
+from rocketsim.config.bootstrap import resolve_user_config_dir
+from rocketsim.config.settings import set_config_root
+from rocketsim.commands import cli
+
+
+def _extract_config_dir_arg(argv: list[str]) -> str | None:
+    """Extract --config-dir from command line arguments."""
+    for index, arg in enumerate(argv):
+        if arg == "--config-dir" and index + 1 < len(argv):
+            return argv[index + 1]
+
+        if arg.startswith("--config-dir="):
+            return arg.split("=", 1)[1]
+
+    return None
+
+
+def main() -> None:
+    """Launch RocketSim."""
+    cli_config_dir = _extract_config_dir_arg(sys.argv[1:])
+    resolved_config_dir = resolve_user_config_dir(
+        cli_config_dir=cli_config_dir,
+    )
+
+    set_config_root(resolved_config_dir)
+
+    cli.app(prog_name=__app_name__)
+
+
+if __name__ == "__main__":
+    main()
