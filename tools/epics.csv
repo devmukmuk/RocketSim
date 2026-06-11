@@ -1,0 +1,8 @@
+Epic,Description,Planned Milestone,Story Points
+Project Setup & CLI Framework,Initialize project, set up Python package structure, CLI argument parsing, and help documentation.,v0.17.0 - 2026W05,5
+Cipher Engine Core,Implement the core cipher logic (encryption and decryption), handle input string sanitization, and exclude/pad options.,v0.18.0 - 2026W07,8
+Playfair Cipher Implementation,Build the 5x5 Playfair cipher logic, including key grid generation, encryption, decryption, and character rules (e.g., double letters, padding).,v0.18.0 - 2026W07,13
+File & Output Handling,Support reading/writing messages from/to files, and CLI options for --output all|message.,v0.19.0 - 2026W09,5
+Testing & Validation,Write unit tests for cipher functions, edge cases, CLI parsing, and file I/O.,v0.19.0 - 2026W09,8
+Documentation & Examples,Add README examples, usage scenarios, and a “how to run” guide for family/friends.,v0.20.0 - 2026W11,3
+Optional Ciphers & Extensions,Add optional cipher variations (like Caesar shift or Vigenère), batch message processing, or interactive mode.,v0.21.0 - 2026W13,13

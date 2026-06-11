@@ -1,0 +1,9 @@
+Label,Points,Description
+SP:1,1,Very small task or bug fix – typically less than 1 hour of work
+SP:2,2,Small task – quick feature, minor UI change, or refactor under 2 hours
+SP:3,3,Medium task – moderate effort, might include tests or documentation
+SP:5,5,Larger feature – multiple steps or files, half-day to full-day of work
+SP:8,8,Complex feature or integration – might involve research or coordination
+SP:13,13,Very large story – multiple components or significant uncertainty
+SP:21,21,Huge or epic story – should likely be broken down into smaller parts
+SP:∞,∞,Unestimated – needs grooming or is too vague to assign a point value

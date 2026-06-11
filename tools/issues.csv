@@ -1,0 +1,15 @@
+Title,Body,Labels,Milestone
+Create cipher CLI entry script,"Create the main CLI entrypoint script for the cipher project (ciphercli.py). It should support --help, --version, and command routing.","['cli', 'SP:3']",v0.17.0 - 2026W05
+Set up project structure and dependencies,"Initialize Python package structure, create .venv, requirements.txt, and basic folder layout for the cipher project.","['setup', 'SP:3']",v0.17.0 - 2026W05
+Implement core cipher functions,"Implement core encryption and decryption functions, handle input string sanitization, padding, and exclude character options.","['feature', 'SP:5']",v0.18.0 - 2026W07
+Add CLI options for encryption/decryption,"Add --type E|D and --message options to the CLI, with input validation and error messages.","['cli', 'SP:3']",v0.18.0 - 2026W07
+Build Playfair cipher engine,"Implement Playfair cipher 5x5 grid generation, handling double letters, padding, and grid rules.","['feature', 'SP:8']",v0.18.0 - 2026W07
+Integrate Playfair cipher with CLI,"Connect Playfair cipher logic to ciphercli.py so users can encrypt/decrypt messages from the command line.","['cli', 'SP:5']",v0.18.0 - 2026W07
+File input/output support,"Add CLI options to read messages from a file and write results to a file.","['feature', 'SP:3']",v0.19.0 - 2026W09
+Support --output all|message flag,"Implement output option to show either just the encrypted/decrypted message or the full output with grid and message.","['feature', 'SP:2']",v0.19.0 - 2026W09
+Write unit tests for cipher logic,"Create unit tests covering core cipher functions, Playfair grid generation, padding, and double-letter handling.","['test', 'SP:5']",v0.19.0 - 2026W09
+Test CLI integration and file I/O,"Write tests for command-line interface, file reading/writing, and --output flag functionality.","['test', 'SP:3']",v0.19.0 - 2026W09
+Add project README and usage examples,"Write README.md with project description, installation instructions, and usage examples for family/friends.","['docs', 'SP:3']",v0.20.0 - 2026W11
+Add example messages and tutorial,"Provide example messages and step-by-step usage guide in README.md and/or USAGE.md files.","['docs', 'SP:2']",v0.20.0 - 2026W11
+Add optional ciphers (Caesar, Vigenère) support,"Implement optional ciphers for batch testing and fun variations in addition to Playfair.","['feature', 'SP:8']",v0.21.0 - 2026W13
+Add interactive CLI mode,"Create an interactive CLI mode where users can choose cipher type, input, and options in a menu-driven interface.","['cli', 'SP:5']",v0.21.0 - 2026W13
