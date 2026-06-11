@@ -28,7 +28,7 @@ class SimulationService:
         result = SimulationResult()
 
         reference_area_m2 = pi * (rocket.diameter / 2.0) ** 2
-        initial_mass_kg = rocket.dry_weight + motor.propellant_weight
+        initial_mass_kg = rocket.dry_weight + motor.loaded_weight
 
         current_state = FlightState(
             time_seconds=0.0,
@@ -159,5 +159,7 @@ class SimulationService:
                 time_seconds=state.time_seconds,
                 altitude_meters=state.altitude_meters,
                 velocity_mps=state.velocity_mps,
+                acceleration_mps2=state.acceleration_mps2,
+                mass_kg=state.mass_kg,
             )
         )

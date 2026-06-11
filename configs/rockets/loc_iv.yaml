@@ -1,0 +1,12 @@
+name: LOC Precision LOC-IV
+diameter: 0.1016
+length: 1.2129
+dry_weight: 0.9639
+center_of_gravity: 0.7830
+center_of_pressure: 0.8860
+fin_count: 3
+fin_root_chord: 0.2032
+fin_tip_chord: 0.1016
+fin_span: 0.1302
+fin_sweep: 0.0762
+drag_coefficient: 0.75

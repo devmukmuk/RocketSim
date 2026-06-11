@@ -32,6 +32,7 @@ def make_test_motor() -> Motor:
         burn_time=2.0,
         delay=8.0,
         propellant_weight=0.15,
+        loaded_weight=0.20,
         thrust_curve=[
             (0.0, 120.0),
             (2.0, 0.0),
@@ -82,7 +83,7 @@ def test_simulation_starts_with_full_mass() -> None:
         motor=motor,
     )
 
-    assert result.states[0].mass_kg == rocket.dry_weight + motor.propellant_weight
+    assert result.states[0].mass_kg == rocket.dry_weight + motor.loaded_weight
 
 
 def test_simulation_burns_propellant_mass() -> None:
